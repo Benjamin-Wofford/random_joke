@@ -7,14 +7,22 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import "./App.css";
 
 class App extends React.Component {
+ 
+  state = {
+    setup: "Why did the chicken cross the road?",
+    punchline: "To cross the road"
+  }
+ 
+ 
   render() {
 
     
+
     return (
       <div className="grid">
         <CssBaseline />
-        <Setup />
-        <Punchline />
+        <Setup setup={this.state.setup}/>
+        <Punchline punchline={this.state.punchline}/>
         <div className="rowMaker">
           <NewJokeButton />
           <PunchlineButton />

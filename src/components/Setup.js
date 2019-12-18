@@ -2,7 +2,7 @@ import React from 'react';
 
 class Setup extends React.Component{
     render(){
-      return <p className='setup'>Why did the chicken cross the road?</p>
+      return <p className='setup'>{this.props.setup}</p>
     }
 }
 
