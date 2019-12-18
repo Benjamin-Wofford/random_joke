@@ -1,8 +1,8 @@
-import React from react;
+import React from 'react';
 
 class Punchline extends React.Component{
     render(){
-       return <h1>To get to the other side</h1>>
+       return <p className='punchline'>To get to the other side</p>
     }
 }
 
