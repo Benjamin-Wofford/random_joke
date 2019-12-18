@@ -16,13 +16,13 @@ body, html {
 }
 
 .setup {
-  font-size: 7vh;
+  font-size: 4vh;
   margin: 0;
   font-family: 'Sulphur Point', sans-serif;
 }
 
 .punchline {
-  font-size: 9vh;
+  font-size: 8vh;
   font-family: 'Sulphur Point', sans-serif;
   margin: 3vh;
 }

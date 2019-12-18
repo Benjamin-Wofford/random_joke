@@ -12,11 +12,18 @@ class App extends React.Component {
     setup: "Why did the chicken cross the road?",
     punchline: "To cross the road"
   }
- 
+
+  getJoke = async (e) => {
+    e.preventDefault()
+    const api_call = await fetch('https://official-joke-api.appspot.com/random_joke')
+    const joke = await api_call.json()
+    this.setState({
+      setup: joke.setup,
+      punchline: joke.punchline
+    })
+  }
  
   render() {
-
-    
 
     return (
       <div className="grid">
@@ -24,7 +31,7 @@ class App extends React.Component {
         <Setup setup={this.state.setup}/>
         <Punchline punchline={this.state.punchline}/>
         <div className="rowMaker">
-          <NewJokeButton />
+          <NewJokeButton getJoke={this.getJoke}/>
           <PunchlineButton />
         </div>
       </div>
