@@ -27,5 +27,25 @@ body, html {
   margin: 3vh;
 }
 
+@media screen and (max-width: 1000px){
+  .setup{
+    font-size: 2vh;
+  }
 
+  .punchline{
+    font-size: 3.5vh;
+  }
+}
+
+/* media query for iphone 5 */
+
+/* @media screen and (device-aspect-ratio: 40/71) {
+  .setup{
+    font-size: 1vh;
+  }
+
+  .punchline{
+    font-size: 2.5vh;
+  }
+} */
 
