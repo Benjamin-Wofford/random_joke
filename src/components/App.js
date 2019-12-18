@@ -8,8 +8,8 @@ import "./App.css";
 class App extends React.Component {
  
   state = {
-    setup: "Why did the chicken cross the road?",
-    punchline: "To cross the road"
+    setup: "Are you ready",
+    punchline: "for some jokes?"
   }
 
   getJoke = async (e) => {
